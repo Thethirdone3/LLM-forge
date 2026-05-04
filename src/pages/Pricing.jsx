@@ -20,7 +20,7 @@ const PLANS = [
   },
   {
     name: "Pro",
-    price: "$12",
+    price: "$10",
     period: "per month",
     color: "#f59e0b",
     highlight: true,
@@ -38,7 +38,7 @@ const PLANS = [
   },
   {
     name: "Team",
-    price: "$49",
+    price: "$20",
     period: "per month",
     color: "#10b981",
     highlight: false,
