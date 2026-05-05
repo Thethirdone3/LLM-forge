@@ -103,16 +103,31 @@ export default function Pricing() {
                   </div>
                 ))}
               </div>
-              <Link to={plan.ctaLink} style={{
-                display: "block", textAlign: "center",
-                background: plan.highlight ? plan.color : "transparent",
-                border: `1px solid ${plan.highlight ? "transparent" : plan.color + "55"}`,
-                borderRadius: 9, padding: "11px",
-                color: plan.highlight ? "#000" : plan.color,
-                fontSize: 13, fontWeight: 700,
-              }}>
-                {plan.cta}
-              </Link>
+              {plan.name === "Pro" ? (
+  <button
+    data-tally-open="XxOkNV"
+    data-tally-emoji-text="👋"
+    data-tally-emoji-animation="wave"
+    style={{
+      display: "block", textAlign: "center", width: "100%",
+      background: "#f59e0b", border: "none",
+      borderRadius: 9, padding: "11px",
+      color: "#000", fontSize: 13, fontWeight: 700,
+      cursor: "pointer",
+    }}>
+    👋 Join the waitlist
+  </button>
+) : (
+  <Link to={plan.ctaLink} style={{
+    display: "block", textAlign: "center",
+    background: "transparent",
+    border: `1px solid ${plan.color + "55"}`,
+    borderRadius: 9, padding: "11px",
+    color: plan.color, fontSize: 13, fontWeight: 700,
+  }}>
+    {plan.cta}
+  </Link>
+)}
             </div>
           ))}
         </div>
