@@ -142,7 +142,6 @@ export default function Pricing() {
     {plan.cta}
   </Link>
 )}
-)}
             </div>
           ))}
         </div>
