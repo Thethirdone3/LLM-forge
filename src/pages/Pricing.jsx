@@ -34,7 +34,7 @@ const PLANS = [
       "Priority support",
     ],
     cta: "Join the waitlist",
-    ctaLink: "#waitlist",
+    ctaLink: "https://tally.so/r/jaGEp9",
   },
   {
     name: "Team",
