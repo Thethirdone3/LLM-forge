@@ -117,6 +117,20 @@ export default function Pricing() {
     }}>
     👋 Join the waitlist
   </button>
+) : plan.name === "Team" ? (
+  <button
+    data-tally-open="kdOrxd"
+    data-tally-emoji-text="👋"
+    data-tally-emoji-animation="wave"
+    style={{
+      display: "block", textAlign: "center", width: "100%",
+      background: "transparent", border: "1px solid #10b98155",
+      borderRadius: 9, padding: "11px",
+      color: "#10b981", fontSize: 13, fontWeight: 700,
+      cursor: "pointer",
+    }}>
+    Contact us
+  </button>
 ) : (
   <Link to={plan.ctaLink} style={{
     display: "block", textAlign: "center",
@@ -127,6 +141,7 @@ export default function Pricing() {
   }}>
     {plan.cta}
   </Link>
+)}
 )}
             </div>
           ))}
